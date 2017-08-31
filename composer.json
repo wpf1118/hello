@@ -1,0 +1,27 @@
+{
+    "name": "wpf/hello",
+    "description": "This is my first try.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "wpf",
+            "email": "413167137@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hello\\": "src/"
+        }
+    },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://packagist.phpcomposer.com"
+      },
+      {
+        "packagist": false
+      }
+    ]
+}
