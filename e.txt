@@ -1,2 +1,4 @@
 add e.txt
+add one line
+add two line
 add three line
