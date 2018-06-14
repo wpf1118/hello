@@ -34,16 +34,4 @@ echo "5.复制项目源码： ${TMP_DIR}/src/ "
 ssh -p 22 root@${HOST} "cd ${TMP_DIR} && cp -rf src/. ${DEPLOY_DIR}"
 echo "<=== 5.成功"
 
-echo "6.清除临时目录：${TMP_DIR}"
-ssh -p 22 root@${HOST} "rm -rf ${TMP_DIR}"
-echo "<=== 6.成功"
-
-echo "7.更新 composer 扩展包 - update composer package "
-ssh -p 22 root@${HOST} "cd ${DEPLOY_DIR} && pwd && composer update"
-echo "<=== 7.成功"
-
-echo "8.递归修改项目根目录权限"
-ssh -p 22 root@${HOST} "chown www:www ${DEPLOY_DIR} -R"
-echo "<=== 8.成功"
-
 echo "<<<<< 发布结束"
