@@ -13,7 +13,6 @@ TMP_DIR=${DEPLOY_DIR}"_tmp_dir"           # 部署临时目录
 
 
 echo ">>>>> 开始发布"
-echo ${PACKAGE_NAME}
 
 echo "===> 1.打包项目src目录下代码到: ${PACKAGE_NAME} "
 tar -czf ${PACKAGE_NAME} src
