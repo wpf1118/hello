@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # 发布环境配置
 
-# bash $WORKSPACE/DeployScript/publish_over_ssh.sh "192.168.31.149" "/data/wwwroot/hello"
-
 
 PROJECT_DIR="$WORKSPACE/"                                 # 发布工程目录
 PACKAGE_NAME=`basename $0 sh`"tar.gz"                     # 打包名称
@@ -11,6 +9,7 @@ HOST=$1                                   # 服务器IP
 DEPLOY_DIR=$2                             # 部署生产目录
 TMP_DIR=${DEPLOY_DIR}"_tmp_dir"           # 部署临时目录
 
+echo ${PROJECT_DIR}
 
 echo ">>>>> 开始发布"
 
